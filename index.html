@@ -42,13 +42,21 @@
 	<link rel="stylesheet" href="css/style.css">
 
 
+	<link type="text/css" rel="stylesheet" href="libs/nanogallery2/css/nanogallery2.min.css" />
+
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<style>
+		.gallery-item {
+			width: 200px;
+			padding: 5px;
+		}
+	</style>
 </head>
 
 <body>
@@ -105,10 +113,16 @@
 				<div class="row r-pb">
 					<div class="col-md-8 col-md-offset-2 text-center section-heading">
 						<h2 class="fh5co-section-title animate-box">Hành trình tình yêu</h2>
-						<p class="fh5co-lead animate-box">Hành trình tình yêu của cô dâu và chú rể là một câu chuyện đẹp đẽ và lãng mạn. Trong hai năm yêu nhau, họ đã trải qua nhiều thăng trầm, nhưng tình yêu của họ vẫn luôn vững chắc. Họ đã cùng nhau chia sẻ niềm vui, nỗi buồn và ước mơ. Và cuối cùng, sau hai năm yêu nhau, họ đã quyết định kết hôn và bắt đầu một cuộc sống mới bên nhau.</p>
+						<p class="fh5co-lead animate-box">Hành trình tình yêu của cô dâu và chú rể là một câu chuyện đẹp
+							đẽ và lãng mạn. Trong hai năm yêu nhau, họ đã trải qua nhiều thăng trầm, nhưng tình yêu của
+							họ vẫn luôn vững chắc. Họ đã cùng nhau chia sẻ niềm vui, nỗi buồn và ước mơ. Và cuối cùng,
+							sau hai năm yêu nhau, họ đã quyết định kết hôn và bắt đầu một cuộc sống mới bên nhau.</p>
 					</div>
 				</div>
 				<div class="row">
+					<div id="nanogallery"></div>
+				</div>
+				<!-- <div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-6 col-xxs-12 animate-box">
 						<div class="img-grid">
 							<img src="images/pic_1.jpg" alt="Linh & Đạt Wedding"
@@ -257,7 +271,7 @@
 						</div>
 					</div>
 
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -266,10 +280,13 @@
 				<div class="row r-pb">
 					<div class="col-md-8 col-md-offset-2 text-center section-heading animate-box">
 						<h2 class="fh5co-section-title">Cô Dâu & Chú Rể</h2>
-						<p class="fh5co-lead">Hành trình tình yêu của cô dâu và chú rể là minh chứng cho tình yêu đích thực, bền vững và trường tồn. Họ đã cùng nhau vượt qua mọi khó khăn để đến được với nhau, và giờ đây họ sẽ cùng nhau bước vào một cuộc sống mới, hạnh phúc và viên mãn. Chúc cho hạnh phúc của họ mãi mãi trường tồn. </p>
+						<p class="fh5co-lead">Hành trình tình yêu của cô dâu và chú rể là minh chứng cho tình yêu đích
+							thực, bền vững và trường tồn. Họ đã cùng nhau vượt qua mọi khó khăn để đến được với nhau, và
+							giờ đây họ sẽ cùng nhau bước vào một cuộc sống mới, hạnh phúc và viên mãn. Chúc cho hạnh
+							phúc của họ mãi mãi trường tồn. </p>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-6 animate-box">
 						<div class="fh5co-text with-plus">
 							<h2>Mộng Linh</h2>
@@ -285,7 +302,7 @@
 						</div>
 					</div>
 
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -295,11 +312,26 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center section-heading">
-						<h2 class="fh5co-section-title animate-box">Tiệc cưới</h2>
-						<p class="fh5co-lead animate-box">2A65/1 Trần Văn Giàu, xã Phạm Văn hai, huyện Bình Chánh, TPHCM</p>
-						<p class="animate-box">Kính mời Ông/Bà, Cô/Dì/Chú/Bác, Anh/Chị/Em đến tham dự và chung vui cùng gia đình Cô dâu & Chú rể</p>
-						<p class="animate-box"><a href="#" target="_blank"
-								class="btn btn-primary btn-lg">Xem bản đồ</a></p>
+						<h2 class="fh5co-section-title animate-box">Vu quy 23/09/2023</h2>
+						<p class="fh5co-lead animate-box">A1/17 Ấp 1 X.Vĩnh Lộc B, H.Bình Chánh, TPHCM
+						</p>
+						<!-- <p class="animate-box">Kính mời Ông/Bà, Cô/Dì/Chú/Bác, Anh/Chị/Em đến tham dự và chung vui cùng
+							gia đình Cô dâu & Chú rể</p> -->
+						<p class="animate-box"><a href="https://goo.gl/maps/PmnPeEC6WsL82Hki9" target="_blank" class="btn btn-primary btn-lg">Xem bản đồ</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center section-heading">
+						<h2 class="fh5co-section-title animate-box">Tân hôn 24/09/2023</h2>
+						<p class="fh5co-lead animate-box">2A65/1 Trần Văn Giàu, X.Phạm Văn hai, H.Bình Chánh, TPHCM
+						</p>
+						<!-- <p class="animate-box">Kính mời Ông/Bà, Cô/Dì/Chú/Bác, Anh/Chị/Em đến tham dự và chung vui cùng
+							gia đình Cô dâu & Chú rể</p> -->
+						<p class="animate-box"><a href="https://goo.gl/maps/PTDZRPsXeVMHuE3WA" target="_blank" class="btn btn-danger btn-lg">Xem bản đồ</a>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -314,20 +346,24 @@
 						<ul class="slides">
 							<li>
 								<blockquote>
-									<p>&ldquo;Hạnh phúc lớn nhất ở đời là có thể tin chắc rằng ta được yêu thương - yêu vì chính bản thân ta, hay đúng hơn, yêu bất kể bản thân ta.&rdquo; <cite>&mdash; Victor 
+									<p>&ldquo;Hạnh phúc lớn nhất ở đời là có thể tin chắc rằng ta được yêu thương - yêu
+										vì chính bản thân ta, hay đúng hơn, yêu bất kể bản thân ta.&rdquo; <cite>&mdash;
+											Victor
 											Hugo</cite></p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
-									<p>&ldquo;Cái na ná tình yêu thì có trăm cái. Nhưng tình yêu đích thực thì chỉ có một.&rdquo;
-										<cite>&mdash;  Xuân Diệu</cite>
+									<p>&ldquo;Cái na ná tình yêu thì có trăm cái. Nhưng tình yêu đích thực thì chỉ có
+										một.&rdquo;
+										<cite>&mdash; Xuân Diệu</cite>
 									</p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
-									<p>&ldquo;Yêu không chỉ là một danh từ – nó là một động từ; nó không chỉ là cảm xúc – nó là quan tâm, chia sẻ, giúp đỡ, hy sinh.&rdquo;
+									<p>&ldquo;Yêu không chỉ là một danh từ – nó là một động từ; nó không chỉ là cảm xúc
+										– nó là quan tâm, chia sẻ, giúp đỡ, hy sinh.&rdquo;
 										<cite>&mdash; William Arthur Ward</cite>
 									</p>
 								</blockquote>
@@ -347,8 +383,8 @@
 					<div class="col-md-6 col-sm-6 animate-box">
 						<div class="fh5co-footer-widget">
 							<p>&copy; Linh & Đạt Wedding.</p>
-							<p>Designed by <a href="#">Chú rể.</a> Được sự ủng hộ và ủy thác từ: <a
-									href="#" target="_blank">Cô dâu</a></p>
+							<p>Designed by <a href="#">Chú rể.</a> Được sự ủng hộ và ủy thác từ: <a href="#"
+									target="_blank">Cô dâu</a></p>
 						</div>
 					</div>
 					<div class="col-md-6 col-sm-6 animate-box">
@@ -393,30 +429,34 @@
 			<script src="js/jquery.stellar.min.js"></script>
 			<!-- Flexslider -->
 			<script src="js/jquery.flexslider-min.js"></script>
+			<!-- Or use the minified version -->
+			<script src="libs/nanogallery2/jquery.nanogallery2.min.js"></script>
 			<!-- Main JS -->
 			<script src="js/main.js"></script>
 
 </body>
 <script>
-        var screenWidth = screen.width;
-        var screenHeight = screen.height;
-        var imgElement = document.createElement("img");
-        var imgUrl1 = "url('images/slide_1.jpg')";
-        var imgUrl2 = "url('images/slide_2.jpg')";
-        var imgUrl3 = "url('images/slide_3.jpg')";
+	var screenWidth = screen.width;
+	var screenHeight = screen.height;
+	var imgElement = document.createElement("img");
+	var imgUrl1 = "url('images/slide_1.jpg')";
+	var imgUrl2 = "url('images/slide_2.jpg')";
+	var imgUrl3 = "url('images/slide_3.jpg')";
 
-        if(screenHeight > screenWidth) {
-            // for mobile devices
-            imgUrl1 = "url('images/slide_1_m.jpg')";
-			imgUrl2 = "url('images/slide_2_m.jpg')";
-			imgUrl3 = "url('images/slide_3_m.jpg')";
-        }
+	if (screenHeight > screenWidth) {
+		// for mobile devices
+		imgUrl1 = "url('images/slide_1_m.jpg')";
+		imgUrl2 = "url('images/slide_2_m.jpg')";
+		imgUrl3 = "url('images/slide_3_m.jpg')";
+	}
 
-		var liElements = document.querySelectorAll('#fh5co-home .slides li');
-		var fh5CoTestimony = document.querySelector('#fh5co-testimony');
-		liElements[0].style.backgroundImage = imgUrl1;
-		liElements[1].style.backgroundImage = imgUrl2;
-		liElements[2].style.backgroundImage = imgUrl3;
-		fh5CoTestimony.style.backgroundImage = imgUrl3;
+	var liElements = document.querySelectorAll('#fh5co-home .slides li');
+	var fh5CoTestimony = document.querySelector('#fh5co-testimony');
+	liElements[0].style.backgroundImage = imgUrl1;
+	liElements[1].style.backgroundImage = imgUrl2;
+	liElements[2].style.backgroundImage = imgUrl3;
+	fh5CoTestimony.style.backgroundImage = imgUrl3;
+
 </script>
+
 </html>
