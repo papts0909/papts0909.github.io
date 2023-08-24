@@ -460,6 +460,20 @@
 
 	}
 
+	var playAudio = function () {
+		// var x = document.getElementById("audioPlayer"); 
+		// x.play(); 
+
+		// var r = confirm("Would You Like To AutoPlay Music ?");
+		// if (r == true) {
+		// 	document.getElementById("audioPlayer").play();
+		// }
+
+		$("body").on("click touch",function(){
+			document.getElementById('myAudio').play();
+		});
+	}
+
 
 	// Document on load.
 	$(function () {
@@ -477,7 +491,7 @@
 		clickMenu();
 		navigationSection();
 		goToTop();
-
+		playAudio();
 
 
 		// Animations
