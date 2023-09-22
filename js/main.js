@@ -491,7 +491,8 @@
 		clickMenu();
 		navigationSection();
 		goToTop();
-		playAudio();
+		
+		//playAudio();
 
 
 		// Animations
